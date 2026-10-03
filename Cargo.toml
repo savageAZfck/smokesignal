@@ -1,0 +1,20 @@
+[package]
+name = "smokesignal"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["Adam Clark <savagetism@icloud.com>"]
+repository = "https://github.com/savageAZfck/smokesignal"
+homepage = "https://github.com/savageAZfck/smokesignal"
+license = "MIT"
+description = "The draft/verify handshake for speculative decoding across heterogeneous accelerators: a small resident model proposes k tokens, a large model verifies all k in one pass, both sides commit the longest matching prefix and rewind identically"
+keywords = ["speculative-decoding", "inference", "draft", "verify", "llm"]
+categories = ["algorithms"]
+readme = "README.md"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[features]
+default = []
